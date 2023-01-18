@@ -97,10 +97,6 @@ a {
   margin-top: 80px;
 }
 
-.centered-block {
-  margin: auto;
-}
-
 .flex-header {
   align-items: center;
   display: flex;
