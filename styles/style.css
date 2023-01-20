@@ -7,7 +7,9 @@ ol,
 ul {
   list-style: none;
 }
-
+body{
+  overflow-x:hidden
+}
 article,
 footer,
 header,
@@ -44,7 +46,7 @@ section {
 }
 
 .header__title {
-  font-weight: 600px;
+  font-weight: 730px;
   line-height: 96px;
   font-size: 102px;
   padding-left: 64px;
@@ -101,7 +103,7 @@ a {
 .flex-header {
   align-items: center;
   display: flex;
-  justify-content: space;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -194,8 +196,8 @@ a {
 }
 
 .table__cell {
-  margin-top: 60px;
-  width: 250px;
+  margin-top: 80px;
+  width: 200px;
 }
 
 .table__heading {
@@ -262,6 +264,7 @@ a {
 }
 
 .kaufman {
+  overflow: hidden;
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #1f1f1f;
@@ -282,7 +285,6 @@ a {
   position: absolute;
   right: -210px;
   top: 0px;
-  overflow: hidden;
   z-index: 0;
 
 }
