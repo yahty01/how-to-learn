@@ -4,8 +4,7 @@ ul {
   list-style: none;
 }
 body{
-  overflow-x:hidden;
-  overflow-x:hidden;
+  overflow-x:hidden;;
 }
 article,
 footer,
@@ -93,9 +92,6 @@ section {
   width: 568px;
 }
 
-.header__img{
-  height: 608px;
-  width: 768px;
 .header__img{
   height: 608px;
   width: 768px;
