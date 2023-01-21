@@ -1,14 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 
 ol,
 ul {
   list-style: none;
 }
 body{
-  overflow-x:hidden
+  overflow-x:hidden;
 }
 article,
 footer,
@@ -31,6 +27,11 @@ section {
 }
 
 .header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
   position: relative;
   background-color: #f2f2f2;
   height: 100vh;
@@ -46,6 +47,8 @@ section {
 }
 
 .header__title {
+  margin: 0;
+  padding: 0;
   font-weight: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -64,11 +67,14 @@ section {
   bottom: 30px;
   left: 64px;
   z-index: 3;
+  margin: 0 0 0 0;
 }
 
-a {
-  text-decoration: none;
+.header__link{
+  text-decoration:none;
+  color: #2f80ed;
 }
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
@@ -81,37 +87,16 @@ a {
   width: 568px;
 }
 
-.header__main-illustration {
+.header__img{
+  height: 608px;
+  width: 768px;
   z-index: 2;
   position: absolute;
   right: 0px;
   bottom: 0px;
+
 }
-
-
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  position: relative;
-  z-index: 1;
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-
-}
-
-.flex-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.text_margin_0 {
-  margin: 0;
-}
-
 .description {
   padding-top: 100px;
 }
@@ -133,6 +118,7 @@ a {
 }
 
 .two-columns__brief {
+  margin: 0 0 0 0;
   color: #2f80ed;
   font-weight: normal;
   line-height: 1.2;
@@ -149,6 +135,7 @@ a {
 }
 
 .two-columns__paragraph {
+  margin: 0 0 0 0;
   font-weight: normal;
   line-height: 34px;
   font-size: 24px;
@@ -166,6 +153,7 @@ a {
 }
 
 .section-title {
+  margin: 0 0 0 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -176,6 +164,7 @@ a {
 }
 
 .section-subtitle {
+  margin: 0 0 0 0;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -196,11 +185,12 @@ a {
 }
 
 .table__cell {
-  margin-top: 80px;
-  width: 200px;
+  margin-top: 60px;
+  width: 250px;
 }
 
 .table__heading {
+  margin: 0 0 0 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -208,6 +198,7 @@ a {
 }
 
 .table__text {
+  margin: 0 0 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -229,6 +220,7 @@ a {
 }
 
 .feynman__title {
+  margin: 0 0 0 0;
   position: relative;
   z-index: 2;
   width: 648px;
@@ -241,6 +233,7 @@ a {
 }
 
 .feynman__subtitle {
+  margin: 0 0 0 0;
   width: fit-content;
   position: relative;
   z-index: 2;
@@ -253,6 +246,7 @@ a {
 }
 
 .feynman__link {
+  text-decoration:none;
   z-index: 2;
   position: absolute;
   right: 48px;
@@ -269,23 +263,26 @@ a {
   padding-bottom: 90px;
   background-color: #1f1f1f;
   position: relative;
+  z-index: 0;
 }
-
-.section-title_theme-dark {
-  position: relative;
-  z-index: 2;
-  color: white;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-
-}
-
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   right: -210px;
   top: 0px;
-  z-index: 0;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 877px;
+  width: 877px;
+}
+
+.section-title_theme_dark {
+  color: white;
+  position: relative;
+  z-index: 2;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
 
 }
 
@@ -293,6 +290,15 @@ a {
   margin-bottom: 90px;
 }
 
+.table__cell_theme_dark {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+
+}
 .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
@@ -315,6 +321,7 @@ a {
 }
 
 .footer {
+  margin: 0 0 0 0;
   min-height: 250px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -322,6 +329,7 @@ a {
 }
 
 .footer__columns {
+  margin: 0 0 0 0;
   min-height: 250px;
   flex-basis: 711px;
   display: flex;
@@ -331,6 +339,7 @@ a {
 }
 
 .footer__column_content_copyright {
+  margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -338,6 +347,7 @@ a {
 }
 
 .footer__author {
+  margin: 0 0 0 0;
   margin-top: 18px;
   margin-bottom: 18px;
 
@@ -347,40 +357,47 @@ a {
   font-weight: normal;
 }
 
-.footer__column-heading {
-
+.footer__column_heading {
+  margin: 0 0 0 0;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
 }
 
-.footer__column-links {
+.footer__column_links {
+  padding:0 0 0 0;
+  margin: 0 0 0 0;
   margin-top: 20px;
-
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__link {
-
+.footer__column-link {
+  margin: 0 0 0 0;
+  text-decoration:none;
   color: white;
 }
 
 .footer__social-icon {
+  margin: 0 0 0 0;
+  margin-left: 0;
   margin-right: 10px;
 }
 
-.footer__columns_info {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  height: 250px;
-}
-
 .footer__column_content_info {
-  margin-left: 70%;
+  margin: 0 0 0 0;
+  margin-left:50%;
+
+}
+.footer__column_content_social{
+  margin: 0 0 0 0;
+  margin-left: auto;
+  margin-right: 0%;
+}
+.footer__list-item{
+  margin: 0 0 0 0;
+  width: 130px;
 }
