@@ -5,6 +5,7 @@ ul {
 }
 body{
   overflow-x:hidden;
+  overflow-x:hidden;
 }
 article,
 footer,
@@ -27,6 +28,11 @@ section {
 }
 
 .header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -87,6 +93,9 @@ section {
   width: 568px;
 }
 
+.header__img{
+  height: 608px;
+  width: 768px;
 .header__img{
   height: 608px;
   width: 768px;
@@ -185,6 +194,8 @@ section {
 }
 
 .table__cell {
+  margin-top: 60px;
+  width: 250px;
   margin-top: 60px;
   width: 250px;
 }
