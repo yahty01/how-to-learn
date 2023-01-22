@@ -1,5 +1,4 @@
 .page {
-  overflow: hidden;
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -46,7 +45,6 @@
 }
 
 .header__subtitle {
-
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   line-height: 25px;
@@ -360,15 +358,15 @@
 
 }
 
-.footer__column_heading {
+.footer__column-heading {
   margin: 0 0 0 0;
-  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
+  color: white;
 }
 
-.footer__column_links {
+.footer__column-links {
   padding: 0 0 0 0;
   margin: 20px 0 16px 0;
   color: white;
@@ -403,11 +401,12 @@
 .footer__column_content_social {
   margin: 0 0 0 0;
   margin-left: auto;
-  margin-right: 0%;
 }
 
 .footer__list-item {
   list-style: none;
   margin: 0 0 0 0;
-  width: 130px;
+}
+.ul{
+  padding: 0;
 }
