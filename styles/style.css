@@ -132,7 +132,6 @@
   font-weight: normal;
   line-height: 34px;
   font-size: 24px;
-  margin: 0;
   padding: 0;
 }
 
@@ -181,8 +180,6 @@
 }
 
 .table__cell {
-  margin-top: 60px;
-  width: 250px;
   margin-top: 60px;
   width: 250px;
 }
