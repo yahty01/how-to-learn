@@ -1,21 +1,5 @@
-
-ol,
-ul {
-  list-style: none;
-}
-body{
-  overflow-x:hidden;;
-}
-article,
-footer,
-header,
-menu,
-nav,
-section {
-  display: block;
-}
-
 .page {
+  overflow: hidden;
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -27,6 +11,7 @@ section {
 }
 
 .header {
+  overflow: hidden;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -46,44 +31,49 @@ section {
 }
 
 .logo_place_header {
+  height: 32px;
+  width: 228px;
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
 .header__title {
-  margin: 0;
-  padding: 0;
-  font-weight: 730px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-weight: 600;
   line-height: 96px;
   font-size: 102px;
-  padding-left: 64px;
+  margin-left: 64px;
   align-items: center;
-  width: 730px;
+  max-width: 730px;
   z-index: 3;
 }
 
 .header__subtitle {
+
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   z-index: 3;
-  margin: 0 0 0 0;
+
 }
 
-.header__link{
-  text-decoration:none;
+.header__link {
+  text-decoration: none;
   color: #2f80ed;
 }
 
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
-  z-index: 1;
+  z-index: 0;
   background-color: #2f80ed;
   position: absolute;
   top: 64px;
@@ -92,15 +82,18 @@ section {
   width: 568px;
 }
 
-.header__img{
+.header__main-illustration {
+  object-position: right;
+  object-fit: cover;
   height: 608px;
   width: 768px;
   z-index: 2;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
 
 }
+
 /* и элемента с модификатором вида ключ-значение */
 .description {
   padding-top: 100px;
@@ -128,7 +121,7 @@ section {
   font-weight: normal;
   line-height: 1.2;
   font-size: 18px;
-  width: 175px;
+  max-width: 175px;
 }
 
 .two-columns__span-accent {
@@ -181,6 +174,9 @@ section {
 }
 
 .table {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
   width: 1100px;
   justify-content: space-between;
   display: flex;
@@ -213,30 +209,36 @@ section {
 }
 
 .feynman {
-  padding-top: 100px;
-  height: 790px;
+  box-sizing: border-box;
+  min-height: 890px;
   background-color: #f2f2f2;
   position: relative;
+
 }
 
 .feynman__image {
+  object-fit: contain;
   position: absolute;
   z-index: 0;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
 }
 
 .feynman__title {
   margin: 0 0 0 0;
   position: relative;
   z-index: 2;
-  width: 648px;
+  max-width: 648px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  padding-top: 100px;
+
 }
 
 .feynman__subtitle {
@@ -253,7 +255,7 @@ section {
 }
 
 .feynman__link {
-  text-decoration:none;
+  text-decoration: none;
   z-index: 2;
   position: absolute;
   right: 48px;
@@ -272,15 +274,17 @@ section {
   position: relative;
   z-index: 0;
 }
+
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   right: -210px;
-  top: 0px;
+  top: 0;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   height: 877px;
   width: 877px;
+  background-position: 50% 50%;
 }
 
 .section-title_theme_dark {
@@ -293,26 +297,26 @@ section {
 
 }
 
-.table_theme_dark {
-  margin-bottom: 90px;
-}
+
 
 .table__cell_theme_dark {
   position: relative;
   z-index: 1;
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
 
 }
+
 .table__heading_theme_dark {
+  margin: 0 auto 0 auto;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
 .section-subtitle_theme_dark {
+  margin: 20px auto 0 auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -322,14 +326,17 @@ section {
 }
 
 .table__text_theme_dark {
+  margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
 .footer {
+  display: flex;
+  box-sizing: border-box;
   margin: 0 0 0 0;
-  min-height: 250px;
+  min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
@@ -337,8 +344,6 @@ section {
 
 .footer__columns {
   margin: 0 0 0 0;
-  min-height: 250px;
-  flex-basis: 711px;
   display: flex;
   width: 90%;
   margin-left: auto;
@@ -346,6 +351,7 @@ section {
 }
 
 .footer__column_content_copyright {
+  flex-basis: 711px;
   margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
@@ -354,14 +360,12 @@ section {
 }
 
 .footer__author {
-  margin: 0 0 0 0;
-  margin-top: 18px;
-  margin-bottom: 18px;
-
+  margin: 18px 0 18px 0;
   color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+
 }
 
 .footer__column_heading {
@@ -373,22 +377,27 @@ section {
 }
 
 .footer__column_links {
-  padding:0 0 0 0;
+  padding: 0 0 0 0;
+  margin: 20px 0 16px 0;
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  list-style-type: none;
+}
+
+.footer__column-link {
   margin: 0 0 0 0;
-  margin-top: 20px;
+  text-decoration: none;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__column-link {
-  margin: 0 0 0 0;
-  text-decoration:none;
-  color: white;
-}
-
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
   margin: 0 0 0 0;
   margin-left: 0;
   margin-right: 10px;
@@ -396,15 +405,17 @@ section {
 
 .footer__column_content_info {
   margin: 0 0 0 0;
-  margin-left:50%;
 
 }
-.footer__column_content_social{
+
+.footer__column_content_social {
   margin: 0 0 0 0;
   margin-left: auto;
   margin-right: 0%;
 }
-.footer__list-item{
+
+.footer__list-item {
+  list-style: none;
   margin: 0 0 0 0;
   width: 130px;
 }
