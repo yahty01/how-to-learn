@@ -1,0 +1,14 @@
+.header {
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    background-color: #f2f2f2;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    /* выше установили ограничения для секции */
+  }
