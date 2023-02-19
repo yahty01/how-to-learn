@@ -1,9 +1,9 @@
 .feynman__image {
-    object-fit: contain;
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    left: 0;
-    width: 867px;
-    height: 637px;
-  }
+  object-fit: contain;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+}

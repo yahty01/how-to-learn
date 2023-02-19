@@ -1,9 +1,9 @@
 .footer {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0 0 0 0;
-    min-height: 350px;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background-color: #1f1f1f;
-  }
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  min-height: 350px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #1f1f1f;
+}
