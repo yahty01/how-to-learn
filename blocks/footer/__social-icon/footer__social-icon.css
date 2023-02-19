@@ -4,4 +4,5 @@
     margin: 0 0 0 0;
     margin-left: 0;
     margin-right: 10px;
-  }
+    transition: opacity 1s ease;
+}

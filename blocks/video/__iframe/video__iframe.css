@@ -1,7 +1,10 @@
 .video__iframe:not(:last-child) {
     margin-right: 20px;
-    
+
 }
-.video__iframe{
+
+.video__iframe {
+    width: 515px;
+    height: 316px;
     border: 0;
 }
